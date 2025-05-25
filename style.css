@@ -580,9 +580,10 @@ body {
 }
 
 .feature-group-left {
-    border: 1px dotted var(--clr-info-dark);
-    padding: 1rem;
+    border-top: 2px dotted var(--clr-info-dark);
+    border-bottom: 2px dotted var(--clr-info-dark);
     flex: 2;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -591,20 +592,39 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "oswald" , sans-serif;
+    border-bottom: 2px dotted var(--clr-info-dark);
     margin-bottom: 1rem;
 }
 
 .section-header h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 200;
     letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.page-numbers {
-    font-size: 1.25rem;
+.page-number {
+    font-size: 3.5rem;
     color: var(--clr-info-dark);
     font-weight: 300;
     letter-spacing: 0.1em;
+}
+
+.page-number span{
+    color: var(--clr-dark);
+}
+
+.page-numbers {
+    font-size: 3.5rem;
+    color: var(--clr-info-dark);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.page-numbers span{
+    color: var(--clr-primary);
 }
 
 .feature-cards {
@@ -614,11 +634,15 @@ body {
 }
 
 .feature-card {
-    border: 1px dotted var(--clr-info-dark);
     padding: 1rem;
     flex: 1;
     display: flex;
     flex-direction: column;
+    border-right: 2px dotted var(--clr-info-dark);
+}
+
+.feature-card:nth-child(1){
+    border-left: 2px dotted var(--clr-info-dark);
 }
 
 .feature-card h3 {
@@ -653,12 +677,31 @@ body {
 
 .feature-highlight .section-header {
     color: var(--clr-white);
+    border-bottom: 0;
 }
 
 .highlight-card {
     display: flex;
     flex-direction: column;
 }
+
+.highlight-card .tag{
+    padding: 4px 8px;
+    width: fit-content;
+    display: inline-block;
+    font-size: 10px;
+    color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.highlight-card .tag:hover{
+    background: var(--clr-primary);
+    color: var(--clr-button);
+}  
 
 .highlight-card h3 {
     font-size: 1.1rem;
@@ -676,4 +719,157 @@ body {
     max-height: 23rem;
     border-radius: 6px;
     margin-top: auto;
+}
+
+
+/*religion section*/
+
+.period-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 115rem;
+  margin: auto;
+  background: #f4f2ef;  /* Light background – adjust as needed */
+}
+
+.period-cards .feature-highlight{
+    background-color: var(--clr-dark);
+}
+
+.period-cards .feature-highlight .tag{
+    border-color: var(--clr-button);
+    color: var(--clr-button);
+}
+
+.period-cards .feature-highlight .tag:hover{
+    color: var(--clr-dark);
+    background: var(--clr-button);
+}
+
+/* Base styling for both cards */
+.period-card {
+  background: white;
+  padding: 1.5rem;
+  border: 1px dotted #ccc;
+  border-radius: 8px;
+  flex: 1;  /* They’ll share available space; you can adjust flex values below */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Header (title and page numbers) for each card */
+.period-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.period-card h2 .page-numbers {
+  font-size: 1.2rem;
+  color: #aaa;
+  font-weight: 300;
+}
+
+/* Tag styling – used in both cards */
+.period-card .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #e44;
+  background: #fceeee;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* Title and date styling for the period card */
+.period-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.period-card .date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+/* Image styling for the period card */
+.period-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: auto;
+}
+
+/* ---------------------------------------------------------
+   Specific styling for the SCIENCE card (the second one)
+--------------------------------------------------------- */
+.science-card {
+  /* Give the science card a bit more space if needed */
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* The science-list holds multiple science items */
+.science-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Each science item appears as a row with a dotted border */
+.science-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border: 1px dotted #ccc;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+/* Thumbnail image for each science item */
+.science-item img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Content (text) in each science item */
+.science-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.science-content .date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.science-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.2rem 0;
+}
+
+.science-content .tag {
+  margin: 0.3rem 0;
+  /* You can keep the same tag style as above or adjust here */
+}
+
+/* Optional: Adjust the paragraph text inside science-content */
+.science-content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.2rem 0;
 }
