@@ -178,20 +178,20 @@ body {
 
 .article-title {
     font-family: 'oswald', sans-serif;
-    font-size: 4.2rem;
+    font-size: 3.5rem;
     font-weight: 100;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-right: 14rem;
     margin-bottom: 40px;
     color: var(--clr-dark);
 }
 
 .articles-grid {
-    margin: 0 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    max-width: 108rem;
+    max-width: 112rem;
     border-top: 2px dotted var(--clr-info-dark);
     border-bottom: 2px dotted var(--clr-info-dark);
     padding: 1rem 0;
@@ -262,11 +262,12 @@ body {
 .see-all-btn {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 8px 20px;
     background: var(--clr-button);
     color: var(--clr-white);
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 300;
+    letter-spacing: 2px;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -277,6 +278,7 @@ body {
 
 .see-all-btn .material-icons {
     margin-left: 5px;
+    font-size: 16px;
 }
 
 
@@ -284,7 +286,7 @@ body {
 
 .magazine-offer {
     display: flex;
-    margin: 5rem 5rem 3rem 5rem;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
     background: var(--clr-info-light);
@@ -295,6 +297,7 @@ body {
     box-shadow: var(--box-shadow);
     gap: 2rem;
     flex-wrap: wrap;
+    max-width: 105rem;
 }
 
 .offer-text {
@@ -384,12 +387,13 @@ body {
 /*Featured article secion*/
 
 .most-recent-section {
-    padding: 1rem;
     font-family: sans-serif;
+    margin: auto;
+    max-width: 112rem;
 }
 
 .section-title {
-    font-size: 4.2rem;
+    font-size: 3.5rem;
     margin-bottom: 3.2rem;
     margin-top: 8rem;
     color: var(--clr-dark);
@@ -403,10 +407,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
     gap: 40px;
-    max-width: 109rem;
-    height: 40rem;
-    margin: auto;
-    padding: 2rem;
+    padding: 2rem 0;
     border-bottom: 2px dotted var(--clr-info-dark);
     border-top: 2px dotted var(--clr-info-dark);
 }
@@ -507,7 +508,7 @@ body {
 .top-interview{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
     align-items: center;
 }
 
@@ -517,11 +518,12 @@ body {
 }
 
 .interview-title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     letter-spacing: 0.05em;
     font-family: 'oswald', sans-serif;
+    font-weight: 300;
     margin-bottom: 2.5rem;
-    margin-left: 30rem;
+    margin-left: 22rem;
 }
 
 .interview-grid {
@@ -529,7 +531,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     flex-wrap: wrap;
     gap: 10px;
-    max-width: 109rem;
+    max-width: 112rem;
     margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -539,7 +541,7 @@ body {
 
 .interview-card {
     padding: 1.5rem;
-    width: 18rem;
+    width: auto;
     text-align: left;
     position: relative;
     border-right: 2px dotted var(--clr-info-dark);
@@ -761,30 +763,23 @@ body {
 
 /* Header (title and page numbers) for each card */
 .period-card h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+  font-size: 3.5rem;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "oswald" , sans-serif;
 }
 
-.period-card h2 .page-numbers {
-  font-size: 1.2rem;
+.period-card h2 .page-numbers{
   color: #aaa;
-  font-weight: 300;
 }
 
-/* Tag styling – used in both cards */
-.period-card .tag {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: bold;
-  color: #e44;
-  background: #fceeee;
-  padding: 0.25rem 0.5rem;
-  border-radius: 12px;
-  margin-bottom: 0.75rem;
+.period-card h2 .page-numbers span{
+  color: var(--clr-dark);
 }
 
 /* Title and date styling for the period card */
@@ -794,38 +789,29 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.period-card .date {
-  font-size: 0.85rem;
-  color: #999;
-  margin-bottom: 1rem;
-}
-
 /* Image styling for the period card */
 .period-card img {
   width: 100%;
   border-radius: 6px;
-  margin-top: auto;
 }
 
-/* ---------------------------------------------------------
-   Specific styling for the SCIENCE card (the second one)
---------------------------------------------------------- */
 .science-card {
-  /* Give the science card a bit more space if needed */
   flex: 1.5;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* The science-list holds multiple science items */
+.science-card .tag{
+    margin-top: 0;
+}
+
 .science-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* Each science item appears as a row with a dotted border */
 .science-item {
   display: flex;
   gap: 1rem;
@@ -835,12 +821,11 @@ body {
   border-radius: 6px;
 }
 
-/* Thumbnail image for each science item */
 .science-item img {
-  width: 100px;
-  height: 70px;
+  width: 11rem;
+  height: 8rem;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 /* Content (text) in each science item */
@@ -848,28 +833,17 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-}
-
-.science-content .date {
-  font-size: 0.8rem;
-  color: #888;
+  gap: 0.1rem;
 }
 
 .science-content h3 {
   font-size: 1rem;
   font-weight: 600;
-  margin: 0.2rem 0;
+  margin: 0;
 }
-
-.science-content .tag {
-  margin: 0.3rem 0;
-  /* You can keep the same tag style as above or adjust here */
-}
-
 /* Optional: Adjust the paragraph text inside science-content */
 .science-content p {
   font-size: 0.9rem;
   color: #555;
-  margin: 0.2rem 0;
+  margin: 0;
 }
