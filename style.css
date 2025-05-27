@@ -514,7 +514,7 @@ body {
 .title {
     font-variation-settings: 'wdth' 85;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 0;
 }
@@ -685,7 +685,7 @@ body {
 }
 
 .feature-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
     font-variation-settings: 'wdth' 85;
@@ -748,7 +748,7 @@ body {
 }
 
 .highlight-card h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 0.25rem;
@@ -776,6 +776,7 @@ body {
   flex-wrap: wrap;
   max-width: 115rem;
   margin: auto;
+  padding: 2rem;
 }
 
 .period-cards .feature-highlight{
@@ -860,6 +861,7 @@ body {
   align-items: center;
   border-top: 2px dotted var(--clr-info-dark);
   padding: 0.75rem 0;
+  margin-top: auto;
 }
 
 .science-item:last-child{
@@ -885,13 +887,15 @@ body {
 }
 
 .science-content h3 {
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin: 0;
+  font-variation-settings: 'wdth' 85;
 }
 /* Optional: Adjust the paragraph text inside science-content */
 .science-content p {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   color: #555;
   margin: 0;
+  font-variation-settings: 'wdth' 85;
 }
