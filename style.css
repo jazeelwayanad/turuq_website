@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wdth@75&family=Bebas+Neue&family=Oswald&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Anek+Malayalam:wdth@75&family=Anek+Malayalam:wdth@85&family=Bebas+Neue&family=Oswald&family=Poppins&display=swap');
 
 :root {
     --clr-primary: #ecebe7;
@@ -42,7 +42,6 @@ body {
 
 :lang(ml) {
     font-family: 'Anek Malayalam', sans-serif;
-    font-variation-settings: 'wdth' 75;
 }
 
 
@@ -125,6 +124,7 @@ body {
     margin-bottom: 5px;
     font-weight: 500;
     line-height: 1;
+    font-variation-settings: 'wdth' 75;
 }
 
 .featured p {
@@ -132,6 +132,7 @@ body {
     color: var(--clr-info-light);
     margin-top: 1px;
     margin-bottom: 8px;
+    font-variation-settings: 'wdth' 75;
 }
 
 .meta {
@@ -180,9 +181,11 @@ body {
     font-family: 'oswald', sans-serif;
     font-size: 3.5rem;
     font-weight: 100;
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-right: 14rem;
-    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 22rem;
+    margin-bottom: 4rem;
     color: var(--clr-dark);
 }
 
@@ -196,6 +199,7 @@ body {
     border-bottom: 2px dotted var(--clr-info-dark);
     padding: 1rem 0;
     position: relative;
+    margin-bottom: 8rem;
 }
 
 .articles-grid>*:not(:last-child) {
@@ -223,7 +227,7 @@ body {
 
 .article-card img {
     width: 100%;
-    height: 22.5rem;
+    height: 27rem;
     border-radius: 10px;
 }
 
@@ -250,7 +254,7 @@ body {
     margin: 10px 0 5px;
     color: var(--clr-dark);
     font-weight: 300;
-    line-height: 1.9rem;
+    line-height: 1.9rem;font-variation-settings: 'wdth' 75;
 }
 
 .see-all-container {
@@ -350,26 +354,25 @@ body {
 .magazine-covers {
     display: flex;
     align-items: flex-end;
-    gap: 4rem;
+    gap: 2rem;
     padding-top: 1rem;
+    max-height: 23rem;
 }
 
 /* Make the left cover smaller */
 .magazine-covers img:nth-child(1) {
     width: 11rem;
     border-radius: 0.5rem;
-    transform: translateY(-1.2rem);
-    /* drop slightly */
+    margin-bottom: 1.5rem;
     z-index: 1;
 }
 
 /* Make the middle cover larger and pop forward */
 .magazine-covers img:nth-child(2) {
     position: relative;
-    top: -5rem;
-    width: 16rem;
+    top: -1.5rem;
+    width: 20rem;
     height: auto;
-    transform: scale(1.34);
     z-index: 2;
     border-radius: 0.75rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -397,19 +400,18 @@ body {
     margin-bottom: 3.2rem;
     margin-top: 8rem;
     color: var(--clr-dark);
-    text-align: center;
+    text-align: left;
     font-family: 'oswald', sans-serif;
     font-weight: 300;
+    margin-left: 22rem;
 }
 
 .articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
-    gap: 40px;
-    padding: 2rem 0;
-    border-bottom: 2px dotted var(--clr-info-dark);
-    border-top: 2px dotted var(--clr-info-dark);
+    gap: 0;
+    padding: 1rem 0;
 }
 
 .article {
@@ -425,39 +427,49 @@ body {
     margin-top: 0;
 }
 
-.article p{
-    display: block;
-}
-
 .article:nth-child(1) {
+    position: relative;
     max-width: 52rem;
     grid-row: span 4;
+    padding: 0 1rem 0 1.5rem;
+    border-left: 2px dotted var(--clr-info-dark);
+    border-right: 2px dotted var(--clr-info-dark);
+    border-radius: 0;
 }
 
-.article:nth-child(1)::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -1.5rem;
-    height: 100%;
-    width: 1px;
-    border-right: 2px dotted var(--clr-info-dark);
+.article:nth-child(2){
+    border-top: 2px dotted var(--clr-info-dark);
 }
 
 .article:nth-child(1) .thumb {
+    width: 100%;
+    height: 95%;
+    border-radius: 8px;
+}
+
+.article:nth-child(1) .thumb-holder{
     max-width: 52rem;
     height: 31rem;
-    border-radius: 8px;
+    border-top: 2px dotted var(--clr-info-dark);
+    padding: 1rem 0 0 0;
 }
 
 .article:nth-of-type(1) .text p:nth-of-type(1) {
     display: none;
 }
 
+.text p{
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
 .article:not(:first-child) {
     flex-direction: row;
     align-items: center;
     gap: 12px;
+    border-bottom: 2px dotted var(--clr-info-dark);
+    padding: 1rem 0 1rem 0;
+    border-radius: 0;
 }
 
 .article:not(:first-child) img {
@@ -468,18 +480,40 @@ body {
 }
 
 .article .text {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
+.article:not(:first-child) .text{
+    border-right: 2px dotted var(--clr-info-dark);
+}
+
+.article:nth-child(1) .text{
+    border-bottom: 2px dotted var(--clr-info-dark);
+    height: 100%;
+}
+
 .article p{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-variation-settings: 'wdth' 85;
+}
+
+.article p.date{
+    font-size: 12px;
+}
+
+.article:nth-child(1) .title{
+    font-size: 2.5rem;
+    font-variation-settings: 'wdth' 85;
 }
 
 .title {
-    font-size: 24px;
+    font-variation-settings: 'wdth' 85;
+    font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
     margin: 0;
@@ -523,7 +557,7 @@ body {
     font-family: 'oswald', sans-serif;
     font-weight: 300;
     margin-bottom: 2.5rem;
-    margin-left: 22rem;
+    margin-left: 24rem;
 }
 
 .interview-grid {
@@ -540,7 +574,7 @@ body {
 }
 
 .interview-card {
-    padding: 1.5rem;
+    padding: 0 1rem 0 1rem;
     width: auto;
     text-align: left;
     position: relative;
@@ -568,11 +602,15 @@ body {
     font-size: 0.75rem;
 }
 
+.interview-card .tag{
+    margin: 0;
+}
+
 
 /*Religion section*/
 
 .feature-group {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 1rem 2rem;
 }
 
 .feature-grid {
@@ -596,7 +634,6 @@ body {
     align-items: center;
     font-family: "oswald" , sans-serif;
     border-bottom: 2px dotted var(--clr-info-dark);
-    margin-bottom: 1rem;
 }
 
 .section-header h2 {
@@ -648,9 +685,10 @@ body {
 }
 
 .feature-card h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
+    font-variation-settings: 'wdth' 85;
 }
 
 .feature-card small {
@@ -661,7 +699,7 @@ body {
 
 .feature-card img {
     max-width: 33rem;
-    max-height: 23rem;
+    max-height: 25rem;
     border-radius: 6px;
     margin-top: auto;
 }
@@ -703,12 +741,18 @@ body {
 .highlight-card .tag:hover{
     background: var(--clr-primary);
     color: var(--clr-button);
-}  
+}
+
+.highlight-card .date{
+    color: var(--clr-info-light);
+}
 
 .highlight-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     font-weight: 600;
+    margin-top: 1rem;
     margin-bottom: 0.25rem;
+    font-variation-settings: 'wdth' 85;
 }
 
 .highlight-card small {
@@ -718,7 +762,7 @@ body {
 
 .highlight-card img {
     max-width: 100%;
-    max-height: 23rem;
+    max-height: 25rem;
     border-radius: 6px;
     margin-top: auto;
 }
@@ -728,11 +772,10 @@ body {
 
 .period-cards {
   display: flex;
-  gap: 2rem;
+  gap: 0;
   flex-wrap: wrap;
   max-width: 115rem;
   margin: auto;
-  background: #f4f2ef;  /* Light background – adjust as needed */
 }
 
 .period-cards .feature-highlight{
@@ -751,9 +794,7 @@ body {
 
 /* Base styling for both cards */
 .period-card {
-  background: white;
-  padding: 1.5rem;
-  border: 1px dotted #ccc;
+  padding: 0 1.5rem 0 1.5rem;
   border-radius: 8px;
   flex: 1;  /* They’ll share available space; you can adjust flex values below */
   display: flex;
@@ -804,28 +845,34 @@ body {
 
 .science-card .tag{
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .science-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  height: 100%;
 }
 
 .science-item {
   display: flex;
   gap: 1rem;
-  align-items: flex-start;
-  border: 1px dotted #ccc;
-  padding: 0.75rem;
-  border-radius: 6px;
+  align-items: center;
+  border-top: 2px dotted var(--clr-info-dark);
+  padding: 0.75rem 0;
+}
+
+.science-item:last-child{
+    border-bottom: 2px dotted var(--clr-info-dark);
 }
 
 .science-item img {
+  padding: 0 0 0 1rem;
   width: 11rem;
   height: 8rem;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 0;
+  border-left: 2px dotted var(--clr-info-dark);
 }
 
 /* Content (text) in each science item */
@@ -834,6 +881,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+  border-right: 2px dotted var(--clr-info-dark);
 }
 
 .science-content h3 {
