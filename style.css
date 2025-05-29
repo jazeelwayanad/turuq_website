@@ -272,7 +272,7 @@ body {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
-    border-radius: 10px;
+    border-radius: 6px;
     text-decoration: none;
 }
 
@@ -292,12 +292,11 @@ body {
     display: flex;
     margin: auto;
     justify-content: space-between;
-    align-items: center;
     background: var(--clr-info-light);
     padding: 2rem 4rem;
     border: 2px solid #CDCCC7;
     border-radius: 12px;
-    max-height: 22rem;
+    max-height: fit-content;
     box-shadow: var(--box-shadow);
     gap: 2rem;
     flex-wrap: wrap;
@@ -795,7 +794,6 @@ body {
 
 /* Base styling for both cards */
 .period-card {
-  padding: 0 1.5rem 0 1.5rem;
   border-radius: 8px;
   flex: 1;  /* They’ll share available space; you can adjust flex values below */
   display: flex;
@@ -857,11 +855,11 @@ body {
 
 .science-item {
   display: flex;
+  flex: 1;
   gap: 1rem;
   align-items: center;
   border-top: 2px dotted var(--clr-info-dark);
   padding: 0.75rem 0;
-  margin-top: auto;
 }
 
 .science-item:last-child{
@@ -898,4 +896,196 @@ body {
   color: #555;
   margin: 0;
   font-variation-settings: 'wdth' 85;
+}
+
+.religion-first {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.period-after{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.period-after .feature-highlight{
+    background-color: var(--clr-dark);
+}
+
+.period-after .feature-highlight .tag{
+    border-color: var(--clr-button);
+    color: var(--clr-button);
+}
+
+.period-after .feature-highlight .tag:hover{
+    color: var(--clr-dark);
+    background: var(--clr-button);
+}
+
+/*Tab size*/
+
+@media screen and (max-width:1400px) {
+    .navbar *{
+        transform: scale(0.8);
+    }
+    .navbar {
+        font-size: 1.6rem;
+        padding: 0;
+    }
+    .navbar p{
+        margin: 0;
+    }
+    .tag{
+        font-size: 8px;
+    }
+    .date{
+        font-size: 10px;
+    }
+    .see-all-btn{
+        font-size: 11px;
+    }
+    .featured-overlay {
+        transform: scale(0.8);
+        transform-origin: bottom right;
+        width: max-content;
+    }
+    .article-title{
+        margin-left: 12rem;
+        font-size: 3rem;
+    }
+    .article-card h3{
+        font-size: 1.5rem;
+    }
+    .article-card img{
+        height: 16rem;
+    }
+    .magazine-covers{
+        margin: auto;
+        transform: scale(0.9);
+    }
+    .magazine-offer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+    }
+    .offer-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        min-height: 200px; /* Optional: ensures some space for pushing the button down */
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        width: 65vw;
+        margin-bottom: 2rem;
+    }
+    .subscribe-btn {
+        margin-top: auto; /* Pushes it to bottom of the column */
+        width: 65vw;
+        text-align: center;
+    }
+
+    .section-title{
+        margin-left: 14rem;
+        font-size: 3rem;
+    }
+    .articles{
+        padding: 1rem 40px;
+        max-height: fit-content;
+    }
+    .article:nth-child(1) .title{
+        font-size: 2rem;
+    }
+    .title{
+        font-size: 1.2rem;
+    }
+    .text p{
+        font-size: 0.9rem;
+    }
+    .article:not(:first-child){
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .interview-title{
+        font-size: 3rem;
+        margin-left: 12rem;
+    }
+    .interview-card h3{
+        font-size: 0.9rem;
+    }
+    .interview-card p{
+        font-size: 0.75rem;
+    }
+
+    .section-header h2{
+        font-size: 3rem;
+    }
+    .page-number{
+        font-size: 3rem;
+    }
+    .page-numbers{
+        font-size: 2.5rem;
+    }
+
+    .feature-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* RELIGION AND ART full width */
+    .religion-first {
+        width: 100%;
+    }
+
+    /* Make location + period side by side */
+    .period-after {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    /* Target LOCATION inside .religion-first */
+    .religion-first .feature-highlight {
+        width: 50%;
+        box-sizing: border-box;
+        padding-right: 1rem; /* optional spacing */
+    }
+
+    /* Target PERIOD inside .period-after */
+    .period-after > .feature-highlight {
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 1rem; /* optional spacing */
+    }
+
+    /* SCIENCE card full width */
+    .science-card {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+
 }
