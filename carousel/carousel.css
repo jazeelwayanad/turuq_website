@@ -1,0 +1,120 @@
+@import url(../assets/style-v.css);
+
+
+.slick-fade .slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 80px 30px;
+}
+
+.overlay-content {
+    max-width: 82rem;
+  color: var(--clr-primary);
+  margin-right: 1.5rem;
+}
+
+.tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: transparent;
+  padding: 4px 8px;
+  margin-right: 5px;
+  border: 1px solid var(--clr-primary);
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: none;
+  text-decoration: none;
+  color: var(--clr-primary);
+
+}
+.tag:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-dark);
+}
+.title {
+  font-size: 5.6rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  line-height: 1;
+  font-variation-settings: "wdth" 75;
+}
+
+.description {
+font-size: 1.7rem;
+  color: var(--clr-info-light);
+  margin-top: 1px;
+  margin-bottom: 8px;
+  font-variation-settings: "wdth" 75;
+}
+
+ .meta {
+  font-size: 14px;
+  color: var(--clr-info-light);
+}
+
+.custom-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+}
+
+.counter {
+  font-size: 14px;
+}
+
+.arrows button {
+  background: #e64124;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.arrows button i {
+  font-size: 16px;
+} 
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.pagination span {
+  color: var(--clr-info-light);
+}
+
+.pagination span span {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+}
+
+.nav-buttons button {
+  background: var(--clr-button);
+  border: none;
+  color: var(--clr-white);
+  padding: 1px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.nav-buttons button:hover {
+  background: var(--clr-button-hover);
+}
