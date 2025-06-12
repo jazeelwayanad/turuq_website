@@ -1,7 +1,7 @@
 @import url(./style-v.css);
 
 .slick-fade .slide {
-  height: 100vh;
+  height: 75vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -12,7 +12,6 @@
   align-items: flex-end;
   padding: 80px 30px;
   overflow: hidden;
-
 }
 
 /* Gradient Overlay */
@@ -28,7 +27,7 @@
 }
 
 .overlay-content {
-  max-width: 82rem;
+  max-width: 77%;
   color: var(--clr-primary);
   margin-right: 1.5rem;
   z-index: 2;
@@ -77,21 +76,23 @@
   color: var(--clr-info-light);
   display: flex;
 }
-
+.pagination {
+  font-family: "oswald", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+  font-size: 1rem;
+}
 .counter {
   color: var(--clr-info-light);
+  font: 1rem;
 }
 
 .current {
   color: var(--clr-white);
   font-size: 1.5rem;
-}
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 26px;
 }
 
 .nav-buttons button {
@@ -105,4 +106,21 @@
 }
 .nav-buttons button:hover {
   background: var(--clr-button-hover);
+}
+.progress-bar {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-left: -10px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #b8b8b8;
+  width: 0%;
+  transition: width linear;
 }

@@ -25,47 +25,21 @@
 </head>
 
 <body>
-
-
-    <!-- *************** Header Start **************** -->
-    <header class="header">
-        <div class="left-section">
-            <button class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="nav-links">
-                <a href="#magazine">Webzine</a>
-                <a href="#archive">Archive</a>
-            </nav>
+    <header class="navbar">
+        <div class="left">
+            <span class="material-icons">menu</span>
+            <p class="webzine">WEBZINE</p>
         </div>
-
-        <a href="#" class="logo">TURUQ</a>
-
-        <div class="right-section">
-            <div class="search-icon" onclick="toggleSearch()">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" />
-                    <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" />
-                </svg>
+        <div class="center">
+            TURUQ
+        </div>
+        <div class="right">
+            <p>ABOUT</p>
+            <div class="search-container">
+                <span class="material-icons" id="search-toggle">search</span>
             </div>
-
-            <div class="auth-links">
-                <a href="#signin">About</a>
-                <a href="#subscribe">Subscribe</a>
-            </div>
-            <!-- Mobile menu -->
-            <div class="mobile-menu" id="mobileMenu">
-                <a href="#magazine">Magazine</a>
-                <a href="#archive">Archive</a>
-                <a href="#subscribe">Subscribe</a>
-                <a href="#signin">Sign In</a>
-            </div>
+        </div>
     </header>
-
-    <!-- *************** Header End **************** -->
 
     <!-- *************** Slide Start **************** -->
 
@@ -77,33 +51,25 @@
                     <span class="tag">ARCHITECTRE</span>
                 </div>
                 <h1 class="title" lang="ml">
-                    ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം
+                    മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം
                 </h1>
                 <p class="description" lang="ml">
                     നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം
-                    തന്നെ അക്കാദമിക ഗവേഷണതലങ്ങളിൽ സംഭവിക്കുന്നു. നാം
+                    എപിസ്റ്റിമിസൈഡ് * തന്നെ അക്കാദമിക ഗവേഷണതലങ്ങളിൽ സംഭവിക്കുന്നു. നാം
                     നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽ ക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം
                     എപിസ്റ്റിമിസൈഡ്
                 </p>
                 <div class="meta">
-                    <span class="author">DAVID WEINJORD</span>&nbsp; | &nbsp;<span class="date">22 MAY 2023</span>
+                    <span class="author">DAVID WEINJORD</span>&nbsp; • &nbsp;<span class="date">22 MAY 2023</span>
                 </div>
                 <div class="pagination">
-
                     <div class="counter">
-                        <span class="current" style="font-size: 1.5rem;">01</span> - <span class="total"
-                            style="font-size: 1rem;">05</span>
+                        <span class="current">01</span> -<span class="total">05</span>
                     </div>
-
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-
                     <div class="nav-buttons">
                         <button><span class="prev material-icons">arrow_back</span></button>
                         <button><span class="next material-icons">arrow_forward</span></button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -124,19 +90,14 @@
                     എപിസ്റ്റിമിസൈഡ്
                 </p>
                 <div class="meta">
-                    <span class="author">DAVID WEINJORD</span>&nbsp; | &nbsp;<span class="date">22 MAY 2023</span>
+                    <span class="author">DAVID WEINJORD</span>
+                    •
+                    <span class="date">22 MAY 2023</span>
                 </div>
                 <div class="pagination">
-
                     <div class="counter">
-                        <span class="current" style="font-size: 1.5rem;">01</span> - <span class="total"
-                            style="font-size: 1rem;">05</span>
+                        <span class="current">01</span> -<span class="total">05</span>
                     </div>
-
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-
                     <div class="nav-buttons">
                         <button><span class="prev material-icons">arrow_back</span></button>
                         <button><span class="next material-icons">arrow_forward</span></button>
@@ -144,6 +105,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <!-- *************** Slide End **************** -->
 
