@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TURUQ</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/carousel.css" />
+
+
 </head>
+
 <body>
     <header class="navbar">
         <div class="left">
@@ -21,31 +38,77 @@
             <div class="search-container">
                 <span class="material-icons" id="search-toggle">search</span>
             </div>
-        </div>                  
+        </div>
     </header>
 
-    <section class="featured">
-        <div class="featured-overlay">
-            <div class="tags">
-                <span>ARCHITECTURE</span>
-                <span>PHILOSOPHY</span>
-                <span>ARCHITECTURE</span>
-            </div>
-            <h1 lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h1>
-            <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ് * തന്നെ അക്കാദമിക ഗവേഷണതലങ്ങളിൽ
-            സംഭവിക്കുന്നു. നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽ ക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്</p>
-            <div class="meta">
-                <span>DAVID WENGZOK</span> • <span>22 MAY 2023</span>
-            </div>
-            <div class="pagination">
-                <span><span>01</span>-05</span>
-                <div class="nav-buttons">
-                    <button><span class="material-icons">arrow_back</span></button>
-                    <button><span class="material-icons">arrow_forward</span></button>
+    <!-- *************** Slide Start **************** -->
+
+    <div class="slick-fade">
+        <div class="slide" style="background-image: url('../assets/tree.jpg')">
+            <div class="overlay-content">
+                <div class="tags">
+                    <span class="tag">UNITED</span>
+                    <span class="tag">ARCHITECTRE</span>
+                </div>
+                <h1 class="title" lang="ml">
+                    മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം
+                </h1>
+                <p class="description" lang="ml">
+                    നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം
+                    എപിസ്റ്റിമിസൈഡ് * തന്നെ അക്കാദമിക ഗവേഷണതലങ്ങളിൽ സംഭവിക്കുന്നു. നാം
+                    നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽ ക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം
+                    എപിസ്റ്റിമിസൈഡ്
+                </p>
+                <div class="meta">
+                    <span class="author">DAVID WEINJORD</span>&nbsp; • &nbsp;<span class="date">22 MAY 2023</span>
+                </div>
+                <div class="pagination">
+                    <div class="counter">
+                        <span class="current">01</span> -<span class="total">05</span>
+                    </div>
+                    <div class="nav-buttons">
+                        <button><span class="prev material-icons">arrow_back</span></button>
+                        <button><span class="next material-icons">arrow_forward</span></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="slide" style="background-image: url('../assets/thumb1.jpg')">
+            <div class="overlay-content">
+                <div class="tags">
+                    <span class="tag">UNITED</span>
+                    <span class="tag">ARCHITECTRE</span>
+                </div>
+                <h1 class="title" lang="ml">
+                    മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം
+                </h1>
+                <p class="description" lang="ml">
+                    നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം
+                    എപിസ്റ്റിമിസൈഡ് * തന്നെ അക്കാദമിക ഗവേഷണതലങ്ങളിൽ സംഭവിക്കുന്നു. നാം
+                    നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽ ക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം
+                    എപിസ്റ്റിമിസൈഡ്
+                </p>
+                <div class="meta">
+                    <span class="author">DAVID WEINJORD</span>
+                    •
+                    <span class="date">22 MAY 2023</span>
+                </div>
+                <div class="pagination">
+                    <div class="counter">
+                        <span class="current">01</span> -<span class="total">05</span>
+                    </div>
+                    <div class="nav-buttons">
+                        <button><span class="prev material-icons">arrow_back</span></button>
+                        <button><span class="next material-icons">arrow_forward</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- *************** Slide End **************** -->
+
 
     <section class="featured-articles">
         <h2 class="article-title">TODAY’S FEATURED ARTICLES</h2>
@@ -57,7 +120,7 @@
                 <h3 lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h3>
                 <span class="date">22 MAY 2023</span>
             </div>
-    
+
             <!-- Article 2 -->
             <div class="article-card">
                 <img src="assets/art2.jpg" alt="Article 2">
@@ -65,12 +128,12 @@
                 <h3 lang="ml">ജാപ്പനീസ് കലാമണ്ഡലത്തില്‍ ഇസ്ലാമിന്റെ ഇടം</h3>
                 <span class="date">22 MAY 2023</span>
             </div>
-    
+
             <!-- See All Button (Middle) -->
             <div class="see-all-container">
                 <a href="#" class="see-all-btn">SEE ALL <span class="material-icons">arrow_forward</span></a>
             </div>
-    
+
             <!-- Article 3 -->
             <div class="article-card">
                 <img src="assets/art3.jpg" alt="Article 3">
@@ -99,7 +162,7 @@
 
     <section class="most-recent-section">
         <h2 class="section-title">MOST RECENT</h2>
-    
+
         <div class="articles">
             <article class="article">
                 <div class="thumb-holder">
@@ -108,7 +171,8 @@
                 <div class="text">
                     <span class="tag">ARCHITECTURE</span>
                     <h4 class="title" lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h4>
-                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.</p>
+                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.
+                    </p>
                     <p class="date">30 APRIL, 2023</p>
                 </div>
             </article>
@@ -120,7 +184,8 @@
                 <div class="text">
                     <span class="tag">ARCHITECTURE</span>
                     <h4 class="title" lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h4>
-                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.</p>
+                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.
+                    </p>
                     <p class="date">30 APRIL, 2023</p>
                 </div>
             </article>
@@ -132,7 +197,8 @@
                 <div class="text">
                     <span class="tag">ARCHITECTURE</span>
                     <h4 class="title" lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h4>
-                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.</p>
+                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.
+                    </p>
                     <p class="date">30 APRIL, 2023</p>
                 </div>
             </article>
@@ -144,7 +210,8 @@
                 <div class="text">
                     <span class="tag">ARCHITECTURE</span>
                     <h4 class="title" lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h4>
-                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.</p>
+                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.
+                    </p>
                     <p class="date">30 APRIL, 2023</p>
                 </div>
             </article>
@@ -156,13 +223,14 @@
                 <div class="text">
                     <span class="tag">ARCHITECTURE</span>
                     <h4 class="title" lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h4>
-                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.</p>
+                    <p lang="ml">നാം നേരിടുന്ന എപിസ്റ്റമിക് കോളനിവൽക്കരണത്തിൻ്റെ അനന്തരഫലമെന്നോണം എപിസ്റ്റിമിസൈഡ്.
+                    </p>
                     <p class="date">30 APRIL, 2023</p>
                 </div>
             </article>
-        </div>          
-    </section>      
-      
+        </div>
+    </section>
+
     <section class="interview-section">
         <div class="top-interview">
             <h2 class="interview-title">INTERVIEW</h2>
@@ -204,15 +272,15 @@
 
     <section class="feature-group">
         <div class="feature-grid">
-    
+
             <!-- Religion and Art Section -->
-             <div class="religion-first">
+            <div class="religion-first">
                 <div class="feature-group-left">
                     <div class="section-header">
                         <h2>RELIGION AND ART</h2>
                         <div class="page-number"><span>1</span> 2</div>
                     </div>
-        
+
                     <div class="feature-cards">
                         <div class="feature-card">
                             <span class="tag">RELIGION</span>
@@ -220,7 +288,7 @@
                             <small>14 MAY 2023</small>
                             <img src="assets/thumb5.jpg" alt="Ghetto" />
                         </div>
-        
+
                         <div class="feature-card">
                             <span class="tag">ART</span>
                             <h3 lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ ഇസ്ലാമിന്റെ ഇടം</h3>
@@ -229,14 +297,14 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Location Highlight -->
                 <div class="feature-highlight">
                     <div class="section-header">
                         <h2>LOCATION</h2>
                         <div class="page-numbers"><span>1</span> 2 3 4</div>
                     </div>
-        
+
                     <div class="highlight-card">
                         <span class="tag">LOCATION</span>
                         <h3 lang="ml">മാംഗ: ജാപ്പനീസ് കലാമണ്ഡലത്തിൽ</h3>
@@ -244,10 +312,10 @@
                         <img src="assets/thumb5.jpg" alt="Sancta Sophia" />
                     </div>
                 </div>
-             </div>
+            </div>
 
             <div class="period-after">
-                
+
                 <div class="feature-highlight">
                     <div class="section-header">
                         <h2>PERIOD</h2>
@@ -263,7 +331,8 @@
                 </div>
 
                 <div class="period-card science-card">
-                    <h2>SCIENCE <div class="page-numbers"><span>1</span> 2</div></h2>
+                    <h2>SCIENCE <div class="page-numbers"><span>1</span> 2</div>
+                    </h2>
                     <div class="science-list">
                         <div class="science-item">
                             <img src="assets/thumb5.jpg" alt="Mare Nostrum">
@@ -296,13 +365,20 @@
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
     </section>
 
-      
-      
-    
-    <script src="script.js"></script>
+    <!-- SCRIPTS -->
+    <script src="./assets/scripts/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Carousel Scripts -->
+    <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/carousel.js"></script>
+
 </body>
+
 </html>

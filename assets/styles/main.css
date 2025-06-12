@@ -1,48 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Anek+Malayalam:wdth@75&family=Anek+Malayalam:wdth@85&family=Bebas+Neue&family=Oswald&family=Poppins&display=swap');
-
-:root {
-    --clr-primary: #ecebe7;
-    --clr-danger: #ff7782;
-    --clr-success: #4CAF50;
-    --clr-white: #fff;
-    --clr-info-dark: #b1aea5;
-    --clr-info-light: #DEDDD9;
-    --clr-dark: #363949;
-    --clr-info: #2196F3;
-    --clr-button: #ef442d;
-    --clr-button-hover: #c52a16;
-    --clr-light: rgba(132, 139, 200, 0.18);
-    --clr-primary-variant: #111e88;
-    --clr-dark-variant: #677483;
-    --clr-color-background: #f6f6f9;
-    --card-border-radius: 2rem;
-    --border-radius-1: 0.4rem;
-    --border-radius-2: 0.8rem;
-    --border-radius-3: 1.2rem;
-    --card-padding: 1.8rem;
-    --padding-1: 1.2rem;
-    --box-shadow: 0 2rem 3rem var(--clr-light);
-    --hover-shadow: 0 0 5px var(--clr-primary);
-    --clr-accent: #e64528;
-    --clr-accent-light: #fceee9;
-}
-
-* {
-    transition: all ease-in-out 0.3s; 
-}
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: var(--clr-white);
-    user-select: none;
-    transition: all ease-in-out .1s;
-    background: var(--clr-primary);
-    color: var(--clr-dark);
-}
-
-:lang(ml) {
-    font-family: 'Anek Malayalam', sans-serif;
-}
+@import url(./style-v.css);
 
 
 .navbar {
@@ -168,6 +124,9 @@ body {
 .nav-buttons button:hover{
     background: var(--clr-button-hover);
 }
+
+/* **************************** */
+
 
 .featured-articles {
     background: #ecebe7;

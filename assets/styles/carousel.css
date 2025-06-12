@@ -1,5 +1,4 @@
-@import url(../assets/styles/style-v.css);
-
+@import url(./style-v.css);
 
 .slick-fade .slide {
   height: 100vh;
@@ -13,10 +12,12 @@
   align-items: flex-end;
   padding: 80px 30px;
   overflow: hidden;
+
 }
+
 /* Gradient Overlay */
 .slick-fade .slide::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -27,7 +28,7 @@
 }
 
 .overlay-content {
-    max-width: 82rem;
+  max-width: 82rem;
   color: var(--clr-primary);
   margin-right: 1.5rem;
   z-index: 2;
@@ -49,7 +50,6 @@
   font-style: none;
   text-decoration: none;
   color: var(--clr-primary);
-
 }
 .tag:hover {
   background-color: var(--clr-primary);
@@ -65,34 +65,24 @@
 }
 
 .description {
-font-size: 1.7rem;
+  font-size: 1.7rem;
   color: var(--clr-info-light);
   margin-top: 1px;
   margin-bottom: 8px;
   font-variation-settings: "wdth" 75;
 }
 
- .meta {
+.meta {
   font-size: 14px;
+  color: var(--clr-info-light);
+  display: flex;
+}
+
+.counter {
   color: var(--clr-info-light);
 }
 
-/* .custom-nav {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5%;
-  align-items: center;
-} */
-
-.counter {
-    color: var(--clr-info-light);
-
-}
-
-.current{
+.current {
   color: var(--clr-white);
   font-size: 1.5rem;
 }
@@ -103,7 +93,6 @@ font-size: 1.7rem;
   justify-content: space-between;
   margin-top: 26px;
 }
-
 
 .nav-buttons button {
   background: var(--clr-button);
