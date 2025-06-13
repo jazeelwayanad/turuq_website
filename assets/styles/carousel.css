@@ -27,7 +27,8 @@
 }
 
 .overlay-content {
-  max-width: 77%;
+  /* max-width: 77%; */
+  margin-left: 21%;
   color: var(--clr-primary);
   margin-right: 1.5rem;
   z-index: 2;
