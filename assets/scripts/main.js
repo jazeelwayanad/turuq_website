@@ -6,10 +6,6 @@ function toggleMenu() {
   hamburger.classList.toggle("active");
 }
 
-function toggleSearch() {
-  // Search functionality would be implemented here
-  alert("Search functionality would be implemented here");
-}
 
 // Close mobile menu when clicking outside
 document.addEventListener("click", function (event) {
