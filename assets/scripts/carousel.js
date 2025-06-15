@@ -33,7 +33,8 @@
     autoplaySpeed: 4000,
     arrows: true,
     prevArrow: $('.prev'),
-    nextArrow: $('.next')
+    nextArrow: $('.next'),
+        pauseOnHover: false
   });
 
   startProgressBar();
