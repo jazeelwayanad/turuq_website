@@ -47,3 +47,111 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+/************** Common Class***************/
+
+.borderless {
+  border: none;
+}
+.border-bottom-dotted {
+  border-bottom: 2px dotted var(--clr-info-dark);
+}
+.border-top-dotted {
+  border-top: 2px dotted var(--clr-info-dark);
+}
+.border-dotted {
+    border: 2px dotted var(--clr-info-dark);
+}
+.border-c-white{
+    border-color: var(--clr-white);
+}
+.color-primary {
+    color: var(--clr-primary);
+}
+.color-danger {
+    color: var(--clr-danger);
+}
+.color-success {
+    color: var(--clr-success);
+}
+.color-info {
+    color: var(--clr-info);
+}
+.color-dark {
+    color: var(--clr-dark);
+}
+.color-white {
+    color: var(--clr-white);
+}
+.color-button {
+    color: var(--clr-button);
+}
+.color-button-hover {
+    color: var(--clr-button-hover);
+}
+.color-accent {
+    color: var(--clr-accent);
+}
+.color-accent-light {
+    color: var(--clr-accent-light);
+}
+.color-info-dark {
+    color: var(--clr-info-dark);
+}
+.color-info-light {
+    color: var(--clr-info-light);
+}
+.color-primary-variant {
+    color: var(--clr-primary-variant);
+}
+.color-dark-variant {
+    color: var(--clr-dark-variant);
+}
+.color-light {
+    color: var(--clr-light);
+}
+.bg-primary {
+    background: var(--clr-primary);
+}
+.bg-danger {
+    background: var(--clr-danger);
+}
+.bg-success {
+    background: var(--clr-success);
+}
+.bg-info {
+    background: var(--clr-info);
+}
+.bg-dark {
+    background: var(--clr-dark);
+}
+.bg-white {
+    background: var(--clr-white);
+}
+.bg-button {
+    background: var(--clr-button);
+}
+.bg-button-hover {
+    background: var(--clr-button-hover);
+}
+.bg-accent {
+    background: var(--clr-accent);
+}
+.bg-accent-light {
+    background: var(--clr-accent-light);
+}
+.bg-info-dark {
+    background: var(--clr-info-dark);
+}
+.bg-info-light {
+    background: var(--clr-info-light);
+}
+.bg-primary-variant {
+    background: var(--clr-primary-variant);
+}
+.bg-dark-variant {
+    background: var(--clr-dark-variant);
+}
+.bg-light {
+    background: var(--clr-light);
+}
