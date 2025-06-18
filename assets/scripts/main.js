@@ -35,16 +35,16 @@ document.querySelectorAll(".mobile-menu a").forEach((link) => {
 
 // Handle responsive behavior
 window.addEventListener("resize", function () {
-  const navLinks = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links");
   const mobileMenu = document.getElementById("mobileMenu");
   const hamburger = document.querySelector(".hamburger");
 
   if (window.innerWidth > 768) {
-    navLinks.style.display = "flex";
-    mobileMenu.classList.remove("active");
+    navLinks.forEach(link => link.style.display = "flex");
+    mobileMenu.classList.add("active");
     hamburger.classList.remove("active");
   } else {
-    navLinks.style.display = "none";
+    navLinks.forEach(link => link.style.display = "none");
   }
 });
 
