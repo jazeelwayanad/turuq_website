@@ -71,13 +71,14 @@
   flex-direction: column;
   padding: 20px;
   z-index: 1000;
-   }
+}
 
-.mobile-menu.active { 
+.mobile-menu.active {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .mobile-menu-items {
   font-family: "Oswald", sans-serif;
   font-size: 15pt;
@@ -104,13 +105,15 @@
   background-color: #333;
 }
 
-.mobile-menu-items:hover{
+.mobile-menu-items:hover {
   color: #d64545;
   border-color: #d64545;
 }
-.mobile-menu-items:hover.mobile-menu-items::after{
- background-color: #d64545;
+
+.mobile-menu-items:hover.mobile-menu-items::after {
+  background-color: #d64545;
 }
+
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(2px, 2px);
 }
@@ -205,56 +208,19 @@
 
 .articles-grid {
   margin: 24px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 48px;
+  display: flex;
   max-width: 1792px;
-  border-top: 2px dotted var(--clr-info-dark);
-  border-bottom: 2px dotted var(--clr-info-dark);
-  padding: 16px 0;
-  position: relative;
-  margin-bottom: 128px;
-}
-
-.articles-grid > *:not(:last-child) {
-  position: relative;
-}
-
-.articles-grid > *::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -24px;
-  height: 100%;
-  width: 1px;
-  border-right: 2px dotted var(--clr-info-dark);
-}
-.articles-grid > *::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -24px;
-  height: 100%;
-  width: 1px;
-  border-left: 2px dotted var(--clr-info-dark);
-}
-.articles-grid > *:first-child::before {
-  display: none;
-}
-.articles-grid > *:nth-child(1):after {
-  display: none;
-}
-.articles-grid > *:nth-child(2):after {
-  display: none;
+  padding: 10px;
 }
 
 .article-card {
   background: transparent;
-  border-radius: 10px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  /* padding: 0 0 16px 0; */
+}
+
+.articles-grid>div {
+  padding: 20px;
+  width: 400px;
 }
 
 .article-card img {
@@ -826,7 +792,8 @@
 /* Base styling for both cards */
 .period-card {
   border-radius: 8px;
-  flex: 1; /* They'll share available space; you can adjust flex values below */
+  flex: 1;
+  /* They'll share available space; you can adjust flex values below */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -921,6 +888,7 @@
   margin: 0;
   font-variation-settings: "wdth" 85;
 }
+
 /* Optional: Adjust the paragraph text inside science-content */
 .science-content p {
   font-size: 20.8px;
@@ -971,55 +939,69 @@
   .navbar * {
     transform: scale(0.8);
   }
+
   .navbar {
     font-size: 25.6px;
     padding: 0;
   }
+
   .navbar p {
     margin: 0;
   }
+
   .tag {
     font-size: 8px;
   }
+
   .date {
     font-size: 10px;
   }
+
   .see-all-btn {
     font-size: 11px;
   }
+
   .featured-overlay {
     transform: scale(0.8);
     transform-origin: bottom right;
     width: max-content;
   }
+
   .article-title {
     margin-left: 192px;
     font-size: 48px;
   }
+
   .article-card h3 {
     font-size: 24px;
   }
+
   .article-card img {
     height: 256px;
   }
+
   .magazine-covers {
     margin: auto;
     transform: scale(0.9);
   }
+
   .magazine-offer {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     gap: 0;
   }
+
   .offer-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    min-height: 200px; /* Optional: ensures some space for pushing the button down */
+    min-height: 200px;
+    /* Optional: ensures some space for pushing the button down */
   }
+
   .content {
     display: flex;
     flex-direction: row;
@@ -1029,8 +1011,10 @@
     width: 65vw;
     margin-bottom: 32px;
   }
+
   .subscribe-btn {
-    margin-top: auto; /* Pushes it to bottom of the column */
+    margin-top: auto;
+    /* Pushes it to bottom of the column */
     width: 65vw;
     text-align: center;
   }
@@ -1039,19 +1023,24 @@
     margin-left: 224px;
     font-size: 48px;
   }
+
   .articles {
     padding: 16px 40px;
     max-height: fit-content;
   }
+
   .article:nth-child(1) .title {
     font-size: 32px;
   }
+
   .title {
     font-size: 19.2px;
   }
+
   .text p {
     font-size: 14.4px;
   }
+
   .article:not(:first-child) {
     padding: 16px 0 16px 16px;
   }
@@ -1060,9 +1049,11 @@
     font-size: 48px;
     margin-left: 192px;
   }
+
   .interview-card h3 {
     font-size: 14.4px;
   }
+
   .interview-card p {
     font-size: 12px;
   }
@@ -1070,9 +1061,11 @@
   .section-header h2 {
     font-size: 48px;
   }
+
   .page-number {
     font-size: 48px;
   }
+
   .page-numbers {
     font-size: 40px;
   }
@@ -1098,14 +1091,16 @@
   .religion-first .feature-highlight {
     width: 50%;
     box-sizing: border-box;
-    padding-right: 16px; /* optional spacing */
+    padding-right: 16px;
+    /* optional spacing */
   }
 
   /* Target PERIOD inside .period-after */
-  .period-after > .feature-highlight {
+  .period-after>.feature-highlight {
     width: 50%;
     box-sizing: border-box;
-    padding-left: 16px; /* optional spacing */
+    padding-left: 16px;
+    /* optional spacing */
   }
 
   /* SCIENCE card full width */
@@ -1116,6 +1111,4 @@
   }
 }
 
-@media screen and (max-width: 640px) {
-}
-
+@media screen and (max-width: 640px) {}
