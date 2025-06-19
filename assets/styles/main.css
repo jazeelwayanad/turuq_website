@@ -1,5 +1,6 @@
 @import url(./style-v.css);
 
+/* *************** Header Styles **************** */
 .header {
   background-color: #dcdbd7;
   padding: 12px 20px;
@@ -57,6 +58,36 @@
 
 .nav-links a:hover {
   color: #d64545;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-size: 26pt;
+  font-weight: 600;
+  color: #d64545;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-icon {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #666;
 }
 
 /* Mobile menu styles */
@@ -127,63 +158,10 @@
   transform-origin: center;
 }
 
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  font-family: "Oswald", sans-serif;
-  font-size: 26pt;
-  font-weight: 600;
-  color: #d64545;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
+/* *************** Slide/Carousel Styles **************** */
+/* Slide styles are handled in carousel.css */
 
-.right-section {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.search-icon {
-  cursor: pointer;
-  padding: 5px;
-}
-
-.search-icon svg {
-  width: 18px;
-  height: 18px;
-  stroke: #666;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .logo {
-    font-size: 24px;
-  }
-
-  .header {
-    padding: 10px 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    font-size: 20px;
-  }
-
-  .right-section {
-    gap: 10px;
-  }
-}
-
-/* **************************** */
-
+/* *************** Featured Articles Section **************** */
 .featured-articles {
   background: #ecebe7;
   padding: 60px 40px;
@@ -280,8 +258,7 @@
   font-size: 16px;
 }
 
-/*offer section*/
-
+/* *************** Magazine Offer Section **************** */
 .magazine-offer {
   display: flex;
   margin: 40px;
@@ -295,6 +272,7 @@
   gap: 32px;
   flex-wrap: wrap;
   max-width: 1680px;
+  margin-top: 200px;
 }
 
 .offer-text {
@@ -378,8 +356,7 @@
   z-index: 1;
 }
 
-/*Featured article secion*/
-
+/* *************** Most Recent Section **************** */
 .most-recent-section {
   font-family: sans-serif;
   margin: auto;
@@ -413,14 +390,15 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-left: 10px;
-  --border-top: 1;
-  --border-right: 1;
   overflow: visible;
+  --border-top: 1;
+  --border-right :1;
 }
+
 .article:last-child {
   --border-bottom: 1;
 }
+
 .article .tag {
   margin-top: 0;
 }
@@ -441,7 +419,6 @@
 .article:nth-child(1) .thumb-holder {
   max-width: 832px;
   height: 496px;
-  /* padding: 16px 0 0 0; */
 }
 
 .text p {
@@ -453,7 +430,8 @@
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  padding: 16px 0 16px 0;
+  padding: 16px 16px 16px 0;
+  margin-left: 20px;
   border-radius: 0;
 }
 
@@ -512,8 +490,7 @@
   color: var(--clr-info-dark);
 }
 
-/*Interview section*/
-
+/* *************** Interview Section **************** */
 .interview-section {
   padding: 64px 40px;
   text-align: center;
@@ -541,16 +518,10 @@
 }
 
 .interview-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  flex-wrap: wrap;
-  gap: 10px;
+  display: flex;
   max-width: 1792px;
-  /* margin: 0 10px; */
   padding-top: 16px;
   padding-bottom: 16px;
-  border-top: 2px dotted var(--clr-info-dark);
-  border-bottom: 2px dotted var(--clr-info-dark);
 }
 
 .interview-card {
@@ -558,11 +529,11 @@
   width: auto;
   text-align: left;
   position: relative;
-  border-right: 2px dotted var(--clr-info-dark);
+  --border-left: 1;
 }
 
-.interview-card:nth-child(1) {
-  border-left: 2px dotted var(--clr-info-dark);
+.interview-card:nth-child(5) {
+  --border-right: 1;
 }
 
 .interview-card h3 {
@@ -586,8 +557,7 @@
   margin: 0;
 }
 
-/*Religion section*/
-
+/* *************** Feature Group Section **************** */
 .feature-group {
   padding: 64px 40px;
 }
@@ -598,22 +568,12 @@
   flex-wrap: wrap;
 }
 
-.feature-group-left {
-  border-right: 2px dotted var(--clr-info-dark);
-  border-left: 2px dotted var(--clr-info-dark);
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px;
-}
-
+/* Common section header styles */
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "oswald", sans-serif;
-  border-bottom: 2px dotted var(--clr-info-dark);
-  border-top: 2px dotted var(--clr-info-dark);
 }
 
 .section-header h2 {
@@ -646,11 +606,27 @@
   color: var(--clr-primary);
 }
 
+/* Religion and Art section */
+.religion-first {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-group-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
 .feature-cards {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  border-bottom: 2px dotted var(--clr-info-dark);
   padding: 10px;
 }
 
@@ -661,8 +637,8 @@
   flex-direction: column;
 }
 
-.feature-card:nth-child(1) {
-  border-right: 2px dotted var(--clr-info-dark);
+.feature-card:first-child {
+  --border-right: 1;
 }
 
 .feature-card h3 {
@@ -685,6 +661,7 @@
   margin-top: auto;
 }
 
+/* Feature highlight (Location & Period) */
 .feature-highlight {
   background-color: var(--clr-accent);
   padding: 24px;
@@ -747,42 +724,40 @@
   margin-top: auto;
 }
 
-/*religion section*/
-
-.period-cards {
+/* Period and Science section */
+.period-after {
   display: flex;
-  gap: 0;
+  justify-content: space-between;
+  gap: 48px;
   flex-wrap: wrap;
-  max-width: 1840px;
-  margin: auto;
-  padding: 32px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
-.period-cards .feature-highlight {
+.period-after .feature-highlight {
   background-color: var(--clr-dark);
 }
 
-.period-cards .feature-highlight .tag {
+.period-after .feature-highlight .tag {
   border-color: var(--clr-button);
   color: var(--clr-button);
 }
 
-.period-cards .feature-highlight .tag:hover {
+.period-after .feature-highlight .tag:hover {
   color: var(--clr-dark);
   background: var(--clr-button);
 }
 
-/* Base styling for both cards */
+/* Base styling for the period card */
 .period-card {
   border-radius: 8px;
   flex: 1;
-  /* They'll share available space; you can adjust flex values below */
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/* Header (title and page numbers) for each card */
 .period-card h2 {
   font-size: 56px;
   font-weight: 200;
@@ -803,19 +778,18 @@
   color: var(--clr-dark);
 }
 
-/* Title and date styling for the period card */
 .period-card h3 {
   font-size: 17.6px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-/* Image styling for the period card */
 .period-card img {
   width: 100%;
   border-radius: 6px;
 }
 
+/* Science card styles */
 .science-card {
   flex: 1.5;
   display: flex;
@@ -832,37 +806,37 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+
 }
 
 .science-item {
   display: flex;
-  flex: 1;
-  gap: 16px;
-  align-items: center;
-  border-top: 2px dotted var(--clr-info-dark);
-  padding: 12px 0;
+  /* flex: 1; */
+  /* gap: 16px; */
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 16px;
+    --border-top:1;
+  --border-right:1;
+  /* --border-bottom:1; */
+  --border-left:1;
 }
-
-.science-item:last-child {
-  border-bottom: 2px dotted var(--clr-info-dark);
+.science-item:nth-child(3) {
+  --border-bottom: 1;
 }
-
 .science-item img {
   padding: 0 0 0 16px;
   width: 176px;
   height: 128px;
   object-fit: cover;
   border-radius: 0;
-  border-left: 2px dotted var(--clr-info-dark);
 }
 
-/* Content (text) in each science item */
 .science-content {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
-  gap: 1.6px;
-  border-right: 2px dotted var(--clr-info-dark);
+  /* gap: 1.6px; */
 }
 
 .science-content h3 {
@@ -872,7 +846,6 @@
   font-variation-settings: "wdth" 85;
 }
 
-/* Optional: Adjust the paragraph text inside science-content */
 .science-content p {
   font-size: 20.8px;
   color: #555;
@@ -880,44 +853,33 @@
   font-variation-settings: "wdth" 85;
 }
 
-.religion-first {
-  display: flex;
-  justify-content: space-between;
-  gap: 48px;
-  flex-wrap: wrap;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* *************** Media Queries **************** */
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
 }
 
-.period-after {
-  display: flex;
-  justify-content: space-between;
-  gap: 48px;
-  flex-wrap: wrap;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .right-section {
+    gap: 10px;
+  }
 }
 
-.period-after .feature-highlight {
-  background-color: var(--clr-dark);
-}
-
-.period-after .feature-highlight .tag {
-  border-color: var(--clr-button);
-  color: var(--clr-button);
-}
-
-.period-after .feature-highlight .tag:hover {
-  color: var(--clr-dark);
-  background: var(--clr-button);
-}
-
-/*Tab size*/
-
+/* Tablet responsiveness */
 @media screen and (max-width: 1400px) {
   .navbar * {
     transform: scale(0.8);
@@ -982,7 +944,6 @@
     align-items: center;
     height: 100%;
     min-height: 200px;
-    /* Optional: ensures some space for pushing the button down */
   }
 
   .content {
@@ -997,7 +958,6 @@
 
   .subscribe-btn {
     margin-top: auto;
-    /* Pushes it to bottom of the column */
     width: 65vw;
     text-align: center;
   }
@@ -1073,17 +1033,13 @@
   /* Target LOCATION inside .religion-first */
   .religion-first .feature-highlight {
     width: 50%;
-    box-sizing: border-box;
     padding-right: 16px;
-    /* optional spacing */
   }
 
   /* Target PERIOD inside .period-after */
   .period-after > .feature-highlight {
     width: 50%;
-    box-sizing: border-box;
     padding-left: 16px;
-    /* optional spacing */
   }
 
   /* SCIENCE card full width */
@@ -1092,7 +1048,4 @@
     box-sizing: border-box;
     margin-top: 16px;
   }
-}
-
-@media screen and (max-width: 640px) {
 }
