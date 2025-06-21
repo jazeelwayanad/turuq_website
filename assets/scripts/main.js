@@ -41,7 +41,7 @@ window.addEventListener("resize", function () {
 
   if (window.innerWidth > 768) {
     navLinks.forEach(link => link.style.display = "flex");
-    mobileMenu.classList.add("active");
+    mobileMenu.classList.remove("active");
     hamburger.classList.remove("active");
   } else {
     navLinks.forEach(link => link.style.display = "none");
