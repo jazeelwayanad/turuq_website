@@ -1,0 +1,67 @@
+/* Responsive Carousel Styles */
+@media screen and (min-width: 1400px) {
+    .progress-bar {
+    width: 95%;
+  }
+}
+/* Responsive Carousel Styles for Extra Large Devices */
+@media screen and (max-width: 1280px) {
+  .overlay-content {
+    /* max-width: 90%; */
+    margin: 10px;
+  }
+  .progress-bar {
+    width: 75%;
+  }
+  .nav-buttons {
+    margin-top: 20px;
+  }
+
+  .pagination {
+    font-size: 14.4pt; /* 19.2px * 0.75 */
+    margin-top: 20px;
+  }
+}
+/* Responsive Carousel Styles for Large Desktop */
+@media screen and (max-width: 1023px) {
+
+  .progress-bar {
+    width: 70%;
+  }
+  .nav-buttons {
+    margin-top: 15px;
+  }
+
+  .pagination {
+    font-size: 13.2pt; /* 17.6px * 0.75 */
+    margin-top: 15px;
+  }
+}
+
+/* Responsive Carousel Styles for Tablet and Small Desktop */
+@media screen and (max-width: 767px) {
+  .progress-bar {
+    width: 60%;
+  }
+  .nav-buttons {
+    margin-top: 10px;
+  }
+
+  .pagination {
+    font-size: 12pt; /* 16px * 0.75 */
+    margin-top: 10px;
+  }
+  
+  .overlay-content {
+    margin: 10px;
+  }
+  .title {
+    font-size: 24pt; /* 32px * 0.75 */
+    margin-bottom: 5px;
+  }
+}
+
+/* Responsive Carousel Styles for Extra Small Devices */
+@media screen and (max-width: 480px) {
+  
+}

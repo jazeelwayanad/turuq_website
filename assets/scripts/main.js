@@ -6,6 +6,21 @@ function toggleMenu() {
   hamburger.classList.toggle("active");
 }
 
+// Check screen size and apply appropriate styles
+function checkScreenSize() {
+  const navLinks = document.querySelectorAll(".nav-links");
+  
+  if (window.innerWidth <= 768) {
+    navLinks.forEach(link => link.style.display = "none");
+  } else {
+    navLinks.forEach(link => link.style.display = "flex");
+  }
+}
+
+// Run on page load
+window.addEventListener('load', function() {
+  checkScreenSize();
+});
 
 // Close mobile menu when clicking outside
 document.addEventListener("click", function (event) {

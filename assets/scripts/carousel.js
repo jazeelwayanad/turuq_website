@@ -34,7 +34,8 @@
     arrows: true,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
-        pauseOnHover: false
+    pauseOnHover: false,
+    
   });
 
   startProgressBar();

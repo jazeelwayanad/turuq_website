@@ -29,7 +29,7 @@
 
 .overlay-content {
   /* max-width: 77%; */
-  margin-left: 21%;
+  margin-left: 15%;
   color: var(--clr-primary);
   margin-right: 10px;
   z-index: 2;
@@ -46,7 +46,7 @@
   margin-right: 5px;
   border: 1px solid var(--clr-primary);
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 9.75pt; /* 13px * 0.75 */
   font-weight: 400;
   font-style: none;
   text-decoration: none;
@@ -57,7 +57,7 @@
   color: var(--clr-dark);
 }
 .title {
-  font-size: 5.6rem;
+  font-size: 67.2pt; /* 89.6px * 0.75 */
   margin-top: 15px;
   margin-bottom: 5px;
   font-weight: 500;
@@ -66,7 +66,7 @@
 }
 
 .description {
-  font-size: 1.7rem;
+  font-size: 20.4pt; /* 27.2px * 0.75 */
   color: var(--clr-info-light);
   margin-top: 1px;
   margin-bottom: 8px;
@@ -74,7 +74,7 @@
 }
 
 .meta {
-  font-size: 14px;
+  font-size: 10.5pt; /* 14px * 0.75 */
   color: var(--clr-info-light);
   display: flex;
 }
@@ -85,16 +85,16 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 26px;
-  font-size: 1rem;
+  font-size: 12pt; /* 16px * 0.75 */
 }
 .counter {
   color: var(--clr-info-light);
-  font: 1rem;
+  font-size: 12pt; /* 16px * 0.75 */
 }
 
 .current {
   color: var(--clr-white);
-  font-size: 1.5rem;
+  font-size: 18pt; /* 24px * 0.75 */
 }
 
 .nav-buttons button {
@@ -111,7 +111,7 @@
 }
 .progress-bar {
   position: relative;
-  width: 90%;
+  width: 80%;
   max-width: 800px;
   height: 3px;
   background: rgba(255, 255, 255, 0.2);
@@ -126,3 +126,4 @@
   width: 0%;
   transition: width linear;
 }
+
