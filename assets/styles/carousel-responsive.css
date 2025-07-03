@@ -9,6 +9,7 @@
   .overlay-content {
     /* max-width: 90%; */
     margin: 10px;
+    margin-left: 15%;
   }
   .progress-bar {
     width: 75%;
@@ -21,10 +22,18 @@
     font-size: 14.4pt; /* 19.2px * 0.75 */
     margin-top: 20px;
   }
+      .s-title {
+    font-size: 35pt; /* 24px * 0.75 */
+  }
+  .description {
+    font-size: 17pt; /* 20px * 0.75 */
+  }
 }
 /* Responsive Carousel Styles for Large Desktop */
 @media screen and (max-width: 1023px) {
-
+.overlay-content {
+    margin-left: 10%;
+  }
   .progress-bar {
     width: 70%;
   }
@@ -36,6 +45,13 @@
     font-size: 13.2pt; /* 17.6px * 0.75 */
     margin-top: 15px;
   }
+    .s-title {
+    font-size: 35pt; /* 24px * 0.75 */
+  }
+  .description {
+    font-size: 15pt; /* 20px * 0.75 */
+  }
+
 }
 
 /* Responsive Carousel Styles for Tablet and Small Desktop */
@@ -53,15 +69,38 @@
   }
   
   .overlay-content {
-    margin: 10px;
+    margin-left: 5%;
   }
-  .title {
-    font-size: 24pt; /* 32px * 0.75 */
-    margin-bottom: 5px;
+  .s-title {
+    font-size: 30pt; /* 24px * 0.75 */
   }
+  .description {
+    font-size: 15pt; /* 20px * 0.75 */
+  }
+
 }
 
 /* Responsive Carousel Styles for Extra Small Devices */
 @media screen and (max-width: 480px) {
-  
+    .overlay-content {
+    /* max-width: 90%; */
+    margin: 10px;
+  }
+  .progress-bar {
+    width: 75%;
+  }
+  .nav-buttons {
+    margin-top: 20px;
+  }
+
+  .pagination {
+    font-size: 14.4pt; /* 19.2px * 0.75 */
+    margin-top: 20px;
+  }
+      .s-title {
+    font-size: 30pt; /* 24px * 0.75 */
+  }
+  .description {
+    font-size: 15pt; /* 20px * 0.75 */
+  }
 }

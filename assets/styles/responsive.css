@@ -6,8 +6,16 @@
 - Small Desktop: 1024px to 1279px
 - Large Desktop: 1280px and above
 */
+  /* ===== LARGE DESKTOP STYLES ===== */
 
+@media screen and (min-width: 1400px) {
 
+ 
+
+   .articles-grid > div{
+    width: 275px;
+   }
+}
 /* Tablet responsiveness */
 @media screen and (max-width: 1400px) {
   .navbar * {
@@ -211,13 +219,18 @@
 
 
   .articles-grid{
-    flex-wrap: wrap;
-    /* flex-direction: column; */
+    margin: 0;
+    --border-bottom: 1;
+
   }
   .articles-grid > div {
-    width: 100%;
     margin-bottom: 20px;
+     --border-right: 0;
+     max-width: 275px;
   }
+.articles-grid > .dotted-border{
+  --border-right: 0;
+}
 
 }
 
