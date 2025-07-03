@@ -76,7 +76,7 @@ document.querySelectorAll(".dotted-border").forEach(box => {
   const gapBottom = parseInt(style.getPropertyValue("--gap-bottom")) || parseInt(box.dataset.gapBottom) || 25;
   const gapLeft = parseInt(style.getPropertyValue("--gap-left")) || parseInt(box.dataset.gapLeft) || 25;
 
-  const strokeColor = style.getPropertyValue("--stroke-color")?.trim() || "#000";
+  const strokeColor = style.getPropertyValue("--stroke-color")?.trim() || "#677483";
   const strokeWidth = parseFloat(style.getPropertyValue("--stroke-width")) || 0.5;
   const dashLength = parseInt(style.getPropertyValue("--dash-length")) || 4;
   const dashGap = parseInt(style.getPropertyValue("--dash-gap")) || 4;
@@ -107,7 +107,8 @@ document.querySelectorAll(".dotted-border").forEach(box => {
     const triangle2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
     function trianglePath(cx, cy, dir) {
-      const triangleWidth = 7;
+      const triangleWidth = 5; // Adjusted triangle width for better visibility
+      // const triangleWidth = 7; // Original width, can be adjusted as needed
       const triangleHeight = 10;
       switch (dir) {
         case 'up': return `M${cx - triangleWidth / 2},${cy - triangleHeight} L${cx + triangleWidth / 2},${cy - triangleHeight} L${cx},${cy} Z`;
