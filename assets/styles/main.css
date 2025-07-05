@@ -1,6 +1,12 @@
 @import url(./style-v.css);
 
 /* *************** Header Styles **************** */
+
+*>a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
   background-color: #dcdbd7;
   padding: 12px 20px;
