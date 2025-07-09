@@ -13,7 +13,7 @@
  
 
    .articles-grid > div{
-    width: 275px;
+    min-width: 275px;
    }
 }
 /* Tablet responsiveness */
@@ -220,17 +220,14 @@
 
   .articles-grid{
     margin: 0;
-    --border-bottom: 1;
 
   }
   .articles-grid > div {
     margin-bottom: 20px;
-     --border-right: 0;
+
      max-width: 275px;
   }
-.articles-grid > .dotted-border{
-  --border-right: 0;
-}
+
 
 }
 

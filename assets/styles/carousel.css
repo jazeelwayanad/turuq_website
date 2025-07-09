@@ -1,21 +1,26 @@
 @import url(./style-v.css);
 
 .slick-fade .slide {
-  height: 75vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   position: relative;
   color: white;
   font-family: "Poppins", sans-serif;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 80px 30px;
-  overflow: hidden;
+  padding: 30px;
+  border-radius: 50px;
+}
+.slick-fade{
+  height: 60vh;
+  width: 80vw;
+  justify-self: center;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 /* Gradient Overlay */
-.slick-fade .slide::after {
+/* .slick-fade .slide::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -25,13 +30,18 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   background-blend-mode: multiply;
   z-index: 1;
+} */
+ 
+.overlay-image{
+  width: 50%;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 .overlay-content {
-  /* max-width: 77%; */
-  margin-left: 15%;
-  color: var(--clr-primary);
-  margin-right: 10px;
+  width: 50%;
+  color: var(--clr-main-text);
   z-index: 2;
   position: relative;
 }
@@ -44,13 +54,13 @@
   background: transparent;
   padding: 4px 8px;
   margin-right: 5px;
-  border: 1px solid var(--clr-primary);
+  border: 1px solid black;
   border-radius: 3px;
   font-size: 9.75pt; /* 13px * 0.75 */
   font-weight: 400;
   font-style: none;
   text-decoration: none;
-  color: var(--clr-primary);
+  color: black;
 }
 .tag:hover {
   background-color: var(--clr-primary);
@@ -62,11 +72,11 @@
   font-weight: 500;
   line-height: 1;
   font-variation-settings: "wdth" 75;
-    font-size: 43pt; /* 24px * 0.75 */
-  }
-  .description {
-    font-size: 17pt; /* 20px * 0.75 */
-  color: var(--clr-info-light);
+  font-size: 43pt; /* 24px * 0.75 */
+}
+.description {
+  font-size: 17pt; /* 20px * 0.75 */
+  color: black;
   margin-top: 1px;
   margin-bottom: 8px;
   font-variation-settings: "wdth" 75;
@@ -126,4 +136,3 @@
   width: 0%;
   transition: width linear;
 }
-

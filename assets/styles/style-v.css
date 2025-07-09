@@ -25,6 +25,9 @@
     --hover-shadow: 0 0 5px var(--clr-primary);
     --clr-accent: #e64528;
     --clr-accent-light: #fceee9;
+    --clr-main: #D64545;
+--clr-main-text: #A82A2A;
+--clr-bg: #FFEDD9;
 }
 
 * {
@@ -36,7 +39,7 @@ body {
     color: var(--clr-white);
     /* user-select: none; */
     transition: all ease-in-out .1s;
-    background: var(--clr-primary);
+    background: var(--clr-bg);
     color: var(--clr-dark);
 }
 
@@ -48,7 +51,7 @@ body {
     color: inherit;
 }
 
-/************** Common Class***************/
+/************** Common Class ***************/
 
 .borderless {
   border: none;

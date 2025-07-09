@@ -1,9 +1,18 @@
+
+
+
 function toggleMenu() {
   const mobileMenu = document.getElementById("mobileMenu");
-  const hamburger = document.querySelector(".hamburger");
+  const hamburger = document.getElementById("nav-icon4");
 
   mobileMenu.classList.toggle("active");
-  hamburger.classList.toggle("active");
+  hamburger.classList.toggle("open");
+
+  if (mobileMenu.classList.contains("active")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+}
 }
 
 // Check screen size and apply appropriate styles
@@ -25,7 +34,7 @@ window.addEventListener('load', function() {
 // Close mobile menu when clicking outside
 document.addEventListener("click", function (event) {
   const mobileMenu = document.getElementById("mobileMenu");
-  const hamburger = document.querySelector(".hamburger");
+  const hamburger = document.getElementById("nav-icon4");
   const header = document.querySelector(".header");
 
   if (
@@ -33,7 +42,7 @@ document.addEventListener("click", function (event) {
     mobileMenu.classList.contains("active")
   ) {
     mobileMenu.classList.remove("active");
-    hamburger.classList.remove("active");
+    hamburger.classList.remove("open");
   }
 });
 
@@ -41,7 +50,7 @@ document.addEventListener("click", function (event) {
 document.querySelectorAll(".mobile-menu a").forEach((link) => {
   link.addEventListener("click", function () {
     const mobileMenu = document.getElementById("mobileMenu");
-    const hamburger = document.querySelector(".hamburger");
+    const hamburger = document.getElementById("nav-icon4");
 
     mobileMenu.classList.remove("active");
     hamburger.classList.remove("active");
@@ -52,7 +61,7 @@ document.querySelectorAll(".mobile-menu a").forEach((link) => {
 window.addEventListener("resize", function () {
   const navLinks = document.querySelectorAll(".nav-links");
   const mobileMenu = document.getElementById("mobileMenu");
-  const hamburger = document.querySelector(".hamburger");
+  const hamburger = document.getElementById("nav-icon4");
 
   if (window.innerWidth > 768) {
     navLinks.forEach(link => link.style.display = "flex");
@@ -63,7 +72,9 @@ window.addEventListener("resize", function () {
   }
 });
 
-document.querySelectorAll(".dotted-border").forEach(box => {
+
+
+document.querySelectorAll(".").forEach(box => {
   const width = box.offsetWidth;
   const height = box.offsetHeight;
 
@@ -82,10 +93,10 @@ document.querySelectorAll(".dotted-border").forEach(box => {
   const dashGap = parseInt(style.getPropertyValue("--dash-gap")) || 4;
 
   // Support BOTH class and CSS custom property (either one should work)
-  const showTop = box.classList.contains("border-top") || parseInt(style.getPropertyValue("--border-top")) === 1;
-  const showRight = box.classList.contains("border-right") || parseInt(style.getPropertyValue("--border-right")) === 1;
-  const showBottom = box.classList.contains("border-bottom") || parseInt(style.getPropertyValue("--border-bottom")) === 1;
-  const showLeft = box.classList.contains("border-left") || parseInt(style.getPropertyValue("--border-left")) === 1;
+  const showTop = box.classList.contains("border-top") || parseInt(style.getPropertyValue("")) === 1;
+  const showRight = box.classList.contains("border-right") || parseInt(style.getPropertyValue("")) === 1;
+  const showBottom = box.classList.contains("border-bottom") || parseInt(style.getPropertyValue("")) === 1;
+  const showLeft = box.classList.contains("border-left") || parseInt(style.getPropertyValue("")) === 1;
 
   function createSVGLine(x1, y1, x2, y2, direction) {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
