@@ -1,6 +1,12 @@
 @import url(./style-v.css);
 
 /* *************** Header Styles **************** */
+
+*>a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
   justify-self: center;
   width: 1290px;
