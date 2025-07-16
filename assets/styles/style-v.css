@@ -33,6 +33,10 @@
 * {
     transition: all ease-in-out 0.3s; 
 }
+
+*::-webkit-scrollbar{
+    display: none;
+}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
