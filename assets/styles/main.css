@@ -92,10 +92,10 @@
   padding: 20px;
   z-index: 999; 
   overflow: hidden;
-/* }
+ }
 
 
-.mobile-menu.active{ */
+.mobile-menu.active{ 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
